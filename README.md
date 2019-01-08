@@ -5,6 +5,7 @@ BoardGameGeekClientAPI is a client api built around the BoardGameGeek XML APIs. 
 The project is a direct extension of these two applications,
 
 https://github.com/ervwalter/bgg-json
+
 https://github.com/WebKoala/W8BggApp
 
 I'm hoping to just make an easier client to interact with and pull down into existing projects for any .Net developers out there. Thanks to WebKoala and ervwalter for your work on those projects.
