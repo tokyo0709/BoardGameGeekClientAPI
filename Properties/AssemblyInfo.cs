@@ -1,12 +1,11 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BoardGameGeekClientAPI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A Client API built around the BoardGameGeek XML APIs")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BoardGameGeekClientAPI")]

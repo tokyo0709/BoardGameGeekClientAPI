@@ -1,7 +1,8 @@
 ﻿//
-//  Adapted from the BoardGameGeek client library created by WebKoala
+//  Adapted from the BoardGameGeek client library created by WebKoala & ervwalter
 //  See this post for more information: http://boardgamegeek.com/thread/972785/c-async-api-client
 //  Original source at https://github.com/WebKoala/W8BggApp
+//  Original wrapper at https://github.com/ervwalter/bgg-json
 //
 
 using BoardGameGeekClientAPI.Helpers;
