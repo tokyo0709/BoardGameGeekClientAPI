@@ -244,6 +244,7 @@ namespace BoardGameGeekClientAPI
                                                           select new GameDetails
                                                           {
                                                               Name = (from p in Boardgame.Element("item").Elements("name") where p.Attribute("type").Value == "primary" select p.Attribute("value").Value).SingleOrDefault(),
+                                                              MinAge = int.Parse(Boardgame.Element("item").Element("minage").Attribute("value").Value),
                                                               GameId = int.Parse(Boardgame.Element("item").Attribute("id").Value),
                                                               Artists = (from p in Boardgame.Element("item").Elements("link") where p.Attribute("type").Value == "boardgameartist" select p.Attribute("value").Value).ToList(),
                                                               AverageRating = decimal.Parse(Boardgame.Element("item").Element("statistics").Element("ratings").Element("average").Attribute("value").Value),

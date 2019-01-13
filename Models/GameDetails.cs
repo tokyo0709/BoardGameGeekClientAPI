@@ -9,6 +9,7 @@ namespace BoardGameGeekClientAPI.Models
     {
         public int GameId { get; set; }
         public string Name { get; set; }
+        public int MinAge { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
         public string Thumbnail { get; set; }
