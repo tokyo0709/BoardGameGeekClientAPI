@@ -261,6 +261,8 @@ namespace BoardGameGeekClientAPI
                                                               MinPlayers = int.Parse(Boardgame.Element("item").Element("minplayers").Attribute("value").Value),
                                                               PlayerPollResults = LoadPlayerPollResults(Boardgame.Element("item").Element("poll")),
                                                               PlayingTime = int.Parse(Boardgame.Element("item").Element("playingtime").Attribute("value").Value),
+                                                              MinPlayTime = int.Parse(Boardgame.Element("item").Element("minplaytime").Attribute("value").Value),
+                                                              MaxPlayTime = int.Parse(Boardgame.Element("item").Element("maxplaytime").Attribute("value").Value),
                                                               Publishers = (from p in Boardgame.Element("item").Elements("link") where p.Attribute("type").Value == "boardgamepublisher" select p.Attribute("value").Value).ToList(),
                                                               Rank = GetRanking(Boardgame.Element("item").Element("statistics").Element("ratings").Element("ranks")),
                                                               //TotalComments = int.Parse(Boardgame.Element("item").Element("comments").Attribute("totalitems").Value),
