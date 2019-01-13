@@ -264,6 +264,7 @@ namespace BoardGameGeekClientAPI
                                                               Publishers = (from p in Boardgame.Element("item").Elements("link") where p.Attribute("type").Value == "boardgamepublisher" select p.Attribute("value").Value).ToList(),
                                                               Rank = GetRanking(Boardgame.Element("item").Element("statistics").Element("ratings").Element("ranks")),
                                                               //TotalComments = int.Parse(Boardgame.Element("item").Element("comments").Attribute("totalitems").Value),
+                                                              AverageWeight = decimal.Parse(Boardgame.Element("item").Element("statistics").Element("ratings").Element("averageweight").Attribute("value").Value),
                                                               YearPublished = int.Parse(Boardgame.Element("item").Element("yearpublished").Attribute("value").Value)
                                                           };
 
