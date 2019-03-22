@@ -1,6 +1,6 @@
 # BoardGameGeekClientAPI
 
-BoardGameGeekClientAPI is a client api built around the BoardGameGeek XML APIs. It should provide a more fluent interface to use when integrating with BGG through .Net apps
+BoardGameGeekClientAPI is a client api built around the BoardGameGeek XML APIs. It should provide a more fluent interface to use when integrating with BGG through .Net apps.
 
 The project is a direct extension of these two applications,
 
